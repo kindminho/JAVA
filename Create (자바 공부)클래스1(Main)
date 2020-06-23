@@ -1,0 +1,14 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Node one = new Node(10, 20);   // one(10, 20) 이라는 좌표(점) 생성
+		Node two = new Node(30, 40);
+		Node result = one.getCenter(two); // one과 two의 정중앙에 점을 생성
+		
+		System.out.println("x : " + result.getX() + ", y : " + result.getY());
+
+	}
+
+}

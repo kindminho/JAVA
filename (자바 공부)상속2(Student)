@@ -1,0 +1,45 @@
+
+public class Student extends Person {  // 'extends'란 Person으로 부터 상속을 받겠다는 함수
+	
+	private String studuntID;
+	private int grade;
+	private double GPA; //'학점'을 표현할 때 외국식으로 학점을 표한 하겠다는 의미
+	public String getStuduntID() {
+		return studuntID;
+	}
+	public void setStuduntID(String studuntID) {
+		this.studuntID = studuntID;
+	}
+	public int getGrade() {
+		return grade;
+	}
+	public void setGrade(int grade) {
+		this.grade = grade;
+	}
+	public double getGPA() {
+		return GPA;
+	}
+	public void setGPA(double gPA) {
+		GPA = gPA;
+	}
+	
+	// Source (Alt + Shift + S) → Generate Constructor using Fields(생성자 소환)
+	public Student(String name, int age, int height, int weight, String studuntID, int grade, double gPA) {
+		super(name, age, height, weight); // 자신의 부모가 가지고 있는 생성자를 사용하겠다는 의미
+		this.studuntID = studuntID;
+		this.grade = grade;
+		GPA = gPA;
+	}
+	
+	public void show() {
+		System.out.println("---------------------------");
+		System.out.println("학생 이름 : " + getName());
+		System.out.println("학생 나이 : " + getAge());
+		System.out.println("학생 키 : " + getHeight());
+		System.out.println("학생 몸무게 : " + getWeight());
+		System.out.println("학번 : " + getStuduntID());
+		System.out.println("학년 : " + getGrade());
+		System.out.println("학점 : " + getGPA());
+	}
+
+}

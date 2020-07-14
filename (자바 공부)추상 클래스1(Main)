@@ -1,0 +1,38 @@
+
+public class Main extends Player{             //extends를 통해 Player를 상속 받을 수 있도록 정의
+
+	public static void main(String[] args) {
+
+		Main main = new Main();
+		main.play("성유빈 - 눈을 감아도");
+		main.pause();
+		main.stop();
+
+	}
+	
+	// 추상 클래스를 적용하여 코딩 시 처음 추상 클래스에 정의 해놓은 play,pause,stop 등
+	// 내가 정해놓은 메소드들을 '미리 알고' '반드시 정의'하도록 할 수 있다.(설계적 측면에서 의미가 있음)
+	// 정확히 어떤 함수를 구현해야 하고, 어떤 이름이으로 되어있는 지 미리 알 수 있다.
+
+	@Override
+	void play(String songName) {  
+		
+		System.out.println(songName + "곡을 재생합니다.");
+		
+	}
+
+	@Override
+	void pause() {
+		
+		System.out.println("곡을 일시정지합니다.");
+		
+	}
+
+	@Override
+	void stop() {
+		
+		System.out.println("곡을 정지합니다.");
+		
+	}
+
+}

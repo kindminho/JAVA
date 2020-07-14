@@ -1,0 +1,6 @@
+
+abstract class Player {       // abstract class : 추상클래스 정의 시 가장 기본적인 방법
+	abstract void play (String songName);   // 곡 재생 함수 정의
+	abstract void pause ();					// 곡 일시정지 함수 정의
+	abstract void stop ();					// 곡 멈춤 함수 정의
+}

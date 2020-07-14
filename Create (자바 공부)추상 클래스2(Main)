@@ -1,0 +1,17 @@
+
+public class Main{
+	
+	public static void main(String[] args) {
+		
+		Dog dog = new Dog();
+		Cat cat = new Cat();
+
+// 'Animal' 추상 클래스 활용 시
+//		'crying'이라는 함수를 사용할 때 적용되는 문자 또는 시스템 실행 (좀 더 체계적인 코딩 가능)
+		
+		dog.crying();    
+		cat.crying();
+		
+	}
+
+}
